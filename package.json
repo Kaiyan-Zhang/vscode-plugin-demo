@@ -1,0 +1,44 @@
+{
+  "name": "fe-douyin-music-figma-helper",
+  "displayName": "fe_douyin_music_figma_helper",
+  "description": "注册了3个命令，可以对figma粘贴而来的代码进行预处理",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "fe_douyin_music.fe_h5_music_figma_css_paste",
+        "title": "FE_DOUYIN_MUSIC: FE_H5_MUSIC_FIGMA_CSS_PASTE"
+      },
+      {
+        "command": "fe_douyin_music.music_storm_fe_figma_css_paste",
+        "title": "FE_DOUYIN_MUSIC: MUSIC_STORM_FE_FIGMA_CSS_PASTE"
+      },
+      {
+        "command": "fe_douyin_music.px_to_rem",
+        "title": "FE_DOUYIN_MUSIC: PX_TO_REM"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "dependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.13.5",
+    "@types/vscode": "^1.97.0",
+    "@vscode/vsce": "^3.2.2",
+    "postcss": "^8.5.3",
+    "typescript": "^5.7.3"
+  }
+}
